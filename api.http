@@ -1,0 +1,38 @@
+### type create, protocolo http, endereço:porta, rota do obj
+POST http://localhost:3000/group HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"admin", 
+    "key":"admin01", 
+    "order":0
+}
+
+### criar um user
+POST http://localhost:3000/user HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"Paulo", 
+    "pass":"Senac@123"
+}
+
+
+
+### lista os usuario
+GET http://localhost:3000/user HTTP/1.1
+Content-Type: application/json
+
+
+### editar um user
+PUT http://localhost:3000/user/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "pass":"SenacMaisFacil"
+}
+
+
+###
+DELETE http://localhost:3000/user/1 HTTP/1.1
+Content-Type: application/json
